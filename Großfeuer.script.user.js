@@ -14,7 +14,7 @@ function killElement(element) {
   }
 }
 var j = 10000; // so oft überprüfen eigene KHs
-var l = 5; // nicht näher als 'n' km
+var l = 5; // nicht näher als 'l' km
 for (x = 1; x <= j; x++)
 {
   var mission = 'div.row:nth-child(6) > div:nth-child(2) > a:nth-child(1)';
