@@ -13,7 +13,7 @@ function killElement(element) {
     if (papa) papa.removeChild(element);
   }
 }
-var k = 2500; // so oft überprüfen VerbandKHs
+var k = 10000; // so oft überprüfen VerbandKHs
 var l = 250; // nicht weiter als 'l' km 
 var m = 50; // maximale Abgabe
 for (i = 1; i <= k; i++)
