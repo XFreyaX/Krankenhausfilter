@@ -14,7 +14,7 @@ function killElement(element) {
   }
 }
 var j = 10000; // so oft überprüfen eigene KHs
-var n = 5; // nicht näher als 'n' km
+var l = 5; // nicht näher als 'n' km
 for (x = 1; x <= j; x++)
 {
   var mission = 'div.row:nth-child(6) > div:nth-child(2) > a:nth-child(1)';
@@ -24,7 +24,7 @@ for (x = 1; x <= j; x++)
 
   if (document.querySelector(mission).innerHTML == 'Großfeuer im Krankenhaus')
 
-  if (entfernungOwn[0] < n)
+  if (entfernungOwn[0] < l)
   {
     var kill = 'table.table:nth-child(3) > tbody:nth-child(2) > tr:nth-child(' + x + ')';
     killElement(document.querySelector(kill));
