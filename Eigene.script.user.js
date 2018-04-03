@@ -13,7 +13,7 @@ function killElement(element) {
     if (papa) papa.removeChild(element);
   }
 }
-var j = 100; // so oft überprüfen eigene KHs
+var j = 10000; // so oft überprüfen eigene KHs
 var l = 50; // nicht weiter als 'l' km 
 for (x = 1; x <= j; x++)
 {
