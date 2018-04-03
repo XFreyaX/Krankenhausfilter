@@ -15,7 +15,7 @@ function killElement(element) {
 }
 var k = 2500; // so oft überprüfen VerbandKHs
 var l = 250; // nicht weiter als 'l' km 
-var m = 50 // maximale Abgabe
+var m = 50; // maximale Abgabe
 for (i = 1; i <= k; i++)
 {
   var fachabteilung = 'table.table:nth-child(5) > tbody:nth-child(2) > tr:nth-child(' + i + ') > td:nth-child(5) > span:nth-child(1) ';
