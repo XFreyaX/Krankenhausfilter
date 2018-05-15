@@ -63,7 +63,7 @@ for (i = 1; i <= k; i++)
     }
    else if (i > o)
   {
-    var kill = 'table.table:nth-child(3) > tbody:nth-child(2) > tr:nth-child(' + x + ')';
+    var kill = 'table.table:nth-child(3) > tbody:nth-child(2) > tr:nth-child(' + i + ')';
     killElement(document.querySelector(kill));
     i = i - 1;
     }
