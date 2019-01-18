@@ -14,8 +14,8 @@ function killElement(element) {
   }
 }
 var k = 10000; // so oft überprüfen VerbandKHs
-var l = 250; // nicht weiter als 'l' km 
-var m = 50; // maximale Abgabe
+var l = 400; // nicht weiter als 'l' km
+var m = 0; // maximale Abgabe
 var n = 5; // nicht näher als 'n' km
 var i;
 for (i = 1; i <= k; i++)
@@ -30,6 +30,7 @@ for (i = 1; i <= k; i++)
     var voAll = 'table.table:nth-child(5) > tbody:nth-child(2) > tr:nth-child(' + i + ') > td:nth-child(6) > a:nth-child(1)';
     var vollAll = document.querySelector(voAll);
     var mission = 'div.row:nth-child(6) > div:nth-child(2) > a:nth-child(1)';
+
     if (document.querySelector(fachabteilung).innerHTML == 'Nein')
     {
         var kill = 'table.table:nth-child(5) > tbody:nth-child(2) > tr:nth-child(' + i + ')';
@@ -60,4 +61,10 @@ for (i = 1; i <= k; i++)
         killElement(document.querySelector(kill));
         i = i - 1;
     }
+   else if (document.querySelector(mission).innerHTML == 'Großfeuer im Krankenhaus (Brandmeldeanlage)' && entfernung[0] < n)
+  {
+    var kill = 'table.table:nth-child(5) > tbody:nth-child(2) > tr:nth-child(' + x + ')';
+    killElement(document.querySelector(kill));
+    x = x - 1;
   }
+}
