@@ -15,7 +15,7 @@ function killElement(element) {
 }
 var j = 10000; // so oft überprüfen eigene KHs
 var l = 50; // nicht weiter als 'l' km
-var n = 5; // nicht näher als 'n' km
+var n = 5; // nicht näher als 'n' km (Großfeuer im Krankenhaus)
 var m = 5; // Anzahl maximaler Einträge
 var x;
 for (x = 1; x <= j; x++)
@@ -51,6 +51,12 @@ for (x = 1; x <= j; x++)
     killElement(document.querySelector(kill));
     x = x - 1;
     }
+   else if (document.querySelector(mission).innerHTML == 'Großfeuer im Krankenhaus (Brandmeldeanlage)' && entfernungOwn[0] < n)
+  {
+    var kill = 'table.table:nth-child(3) > tbody:nth-child(2) > tr:nth-child(' + x + ')';
+    killElement(document.querySelector(kill));
+    x = x - 1;
+  }
    else if (x > m)
   {
     var kill = 'table.table:nth-child(3) > tbody:nth-child(2) > tr:nth-child(' + x + ')';
