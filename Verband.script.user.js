@@ -16,7 +16,7 @@ function killElement(element) {
 var k = 10000; // so oft überprüfen VerbandKHs
 var l = 400; // nicht weiter als 'l' km
 var m = 0; // maximale Abgabe
-var n = 5; // nicht näher als 'n' km
+var n = 5; // nicht näher als 'n' km (Großfeuer im Krankenhaus)
 var i;
 for (i = 1; i <= k; i++)
 {
